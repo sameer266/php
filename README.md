@@ -36,3 +36,35 @@ Navigate to the Feedback page to submit feedback. The input data will be stored 
 
 License
 This project is open-source and available under the MIT License.
+
+Database 
+xampp bus_queue
+1st==>users
+2nd ==> stops
+3rd ==> routes
+routes :
+CREATE TABLE routes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    bus_number VARCHAR(50) NOT NULL,
+    route VARCHAR(255) NOT NULL,
+    departure_time TIME NOT NULL
+);
+stops:
+CREATE TABLE stops (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    route_id INT,
+    name VARCHAR(255) NOT NULL,
+    lat DOUBLE NOT NULL,
+    lng DOUBLE NOT NULL,
+    estimated_time TIME NOT NULL,
+    FOREIGN KEY (route_id) REFERENCES routes(id)
+);
+users:
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('admin', 'user') NOT NULL
+);
+
+
