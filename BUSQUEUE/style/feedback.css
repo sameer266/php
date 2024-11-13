@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the whole page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Content Section */
+section.content {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for content */
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.feedback-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input fields and textarea */
+.feedback-form input, 
+.feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Input field focus effect */
+.feedback-form input:focus, 
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: #5e9ed6;
+}
+
+/* Submit Button */
+.feedback-form button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.feedback-form button:hover {
+    background-color: #5e9ed6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}

@@ -1,0 +1,81 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for form */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1E90FF;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1E90FF;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1E90FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00BFFF;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

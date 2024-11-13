@@ -1,0 +1,116 @@
+/* Reset and body styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    max-width: 150px;
+    background-color: #2a3b4d;
+    color: #ecf0f1;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1abc9c;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+/* Content and map styling */
+.content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #3c4a5c;
+    color: #ecf0f1;
+    padding: 15px 20px;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+}
+
+.user-profile i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+/* Route Data section */
+.route-data {
+    margin: 20px;
+}
+
+.route-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.route-data table th, .route-data table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.route-data table th {
+    background-color: #f2f2f2;
+}
+
+#map {
+    margin-top: 20px;
+    height: 500px;
+}
